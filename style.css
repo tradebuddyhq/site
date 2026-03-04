@@ -1,0 +1,30 @@
+.feature:hover, .testimonial-inner:hover, a:hover {
+    animation: transformer 0.4s;
+    transform: scale(1.1, 1.1);
+}
+@keyframes transformer {
+    from {transform: scale(1, 1)}
+    to {transform: scale(1.1, 1.1)}
+}
+
+@keyframes transformer2 {
+    from {transform: scale(1.1, 1.1)}
+    to {transform: scale(1, 1)}
+}
+
+.feature, .testimonial-inner, a {
+    animation: transformer2 0.4s;
+    transform: scale(1, 1);
+}
+
+.embim {
+    width: 250px;
+}
+
+
+ .circle{
+    border:1px solid blue;
+    border-radius: 50%;
+    height: 200px;
+    width: 400px;
+}

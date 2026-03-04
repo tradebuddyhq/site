@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+	<div class="container a-container" id="a-container">
+		<form class="form" id="b-form" method="POST" action="login.php">
+			<h2 class="form_title title">Login to Website</h2>
+			<input class="form__input" type="text" placeholder="Email" name="eml">
+			<input class="form__input" type="password" placeholder="Password" name="pass">
+			<a class="form__link" href="#" onclick="alert('Please write an email to arhan.harchandani@gmail.com for password assistance.'); return false;">Forgot your password?</a>
+			<button type="submit" value="LOGIN" class="loginButton">Login</button>
+		</form>
+	</div>
+	<div class="container b-container" id="b-container">
+		<form class="form" id="a-form" method="POST" action="login.php">
+			<h2 class="form_title title">Create Account</h2>
+			<input class="form__input" type="text" placeholder="Parent/Guardian Full Name" name="parent_name" required>
+			<input class="form__input" type="email" placeholder="Email Address" name="email" required>
+			<input class="form__input" type="password" placeholder="Password" name="password" required>
+			<input class="form__input" type="text" placeholder="Child's Year/Grade (Optional)" name="child_year_grade">
+			<div class="terms-container">
+				<label class="terms-label">
+					<input type="checkbox" name="terms_accepted" value="1" required class="terms-checkbox">
+					<span>I accept the terms and conditions. I understand this platform is for adults only (18+).</span>
+				</label>
+			</div>
+			<button type="submit" value="SIGN UP" class="signup">SUBMIT</button>
+		</form>
+	</div>
+	<div class="switch" id="switch-cnt">
+		<div class="switch__circle"></div>
+		<div class="switch__circle switch__circle--t"></div>
+		<div class="switch__container" id="switch-c1">
+			<h2 class="switch__title title">New to us?</h2>
+			<p class="switch__description description">Create your account and start your journey with us.</p>
+			<button class="switch__button button switch-btn">SIGN UP</button>
+		</div>
+		<div class="switch__container is-hidden" id="switch-c2">
+			<h2 class="switch__title title">Already a user?</h2>
+			<p class="switch__description description">To keep connected with us please login with your credentials.</p>
+			<button class="switch__button button switch-btn">LOGIN</button>
+		</div>
+	</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
